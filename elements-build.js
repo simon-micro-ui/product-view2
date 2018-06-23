@@ -1,0 +1,17 @@
+const fs = require('fs-extra');
+const concat = require('concat');
+(async function build() {
+    const files = [
+        './dist/product-view2/runtime.js',
+        './dist/product-view2/polyfills.js',
+        //'./dist/product-view2/styles.js',
+        './dist/product-view2/scripts.js',
+        //'./dist/product-view2/vendor.js',
+        './dist/product-view2/main.js',
+    ]
+    await fs.ensureDir('./dist-npm')
+    await fs.ensureDir('./dist-npm/product-view2')
+    await concat(files, './dist-npm/product-view2/product-view2.js');
+    await fs.copyFile('./dist/product-view2/styles.css', './dist-npm/product-view2/styles.css')
+    await fs.copy('./dist/product-view2/assets/', './dist-npm/product-view2/assets/' )
+})();
