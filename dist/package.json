@@ -1,9 +1,0 @@
-{
-  "name": "mf-pc",
-  "author":"lionel robbin",
-  "version": "0.0.7",
-  "license": "MIT",
-   "main": "bundles/mf-pc.umd.js",
-  "module": "index.js",
-  "typings": "index.d.ts"
-}

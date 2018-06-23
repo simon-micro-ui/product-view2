@@ -1,1 +1,0 @@
-console.log("SIMON In product-cart : my-test.js");
