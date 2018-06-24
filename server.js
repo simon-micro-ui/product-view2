@@ -13,7 +13,7 @@ app.get('/index.html', function(req,res) {
 });
 app.get('/product-view2.js', function(req,res) {
     console.log('__dirname:'+__dirname);
-    res.sendFile(path.join(__dirname+'/dist-npm/product-view2/product-view2.js'));
+    res.sendFile(path.join(__dirname+'/dist/product-view2/main.js'));
 });
 
 console.log("Starting server on port 8082");

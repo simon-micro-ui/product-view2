@@ -4,7 +4,7 @@ import { createCustomElement } from '@angular/elements';
 
 import { ProductViewComponent } from './productview2/productview2.component';
 
-import 'zone.js/dist/zone';
+//import 'zone.js/dist/zone';
 //import '@webcomponents/custom-elements/src/native-shim';
 
 @NgModule({
